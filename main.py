@@ -11,10 +11,10 @@ class Position:
         for z in range(0,len(self.treasure_map)-1):
             for v in range(0,len(self.treasure_map[z])-1):
                 if self.treasure_map[z][v]!=0:
-                    self.visited[z][v] = 1
-                    self.treasure_value()
+                     self.visited[z][v] = 1
+                     self.treasure_value()
+                     print(self.sum_of_treasures())
 
-        print(self.sum_of_treasures())
 
     def treasure_value(self):
 
@@ -43,14 +43,14 @@ class Position:
                         self.visited[i][j + 1]= k+1
                         k += 1
 
-
+//test
 #TODO zmienić sposób dodawaninia
     def sum_of_treasures(self):
         sum=0
         for i in range(0, len(self.visited) ):
             for j in range(0, len(self.visited[i]) ):
-                if self.treasure_map[i][j]>sum:
-                    sum=self.treasure_map[i][j]
+                if self.visited[i][j]!=0:
+                    sum+=self.treasure_map[i][j]
         return sum
 
 
