@@ -22,7 +22,7 @@ class Position:
         while k < 16:
             k += 1
             self.make_step(k)
-# musze zmienić sposób k
+# TODO musze zmienić sposób k
     def make_step(self, k):
         for i in range(0, len(self.visited) - 1):
             for j in range(0, len(self.visited[i]) - 1):
