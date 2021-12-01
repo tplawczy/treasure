@@ -36,7 +36,7 @@ class Position:
                         self.visited[i + 1][j] = k + 1
                     if j < len(self.visited[i])-1 and self.treasure_map[i][j + 1] != 0 and self.visited[i][j + 1] == 0:
                         self.visited[i][j + 1] = k + 1
-
+#TODO zmienić sposób dodawaninia
     def sum_of_treasures(self):
         list_first_element=([x[0] for x in self.elements])
         list_second_element=([x[1] for x in self.elements])
