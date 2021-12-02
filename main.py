@@ -24,7 +24,7 @@ class Position:
                         if self.sum > self.max:
                             self.max = self.sum
         print(self.max)
-
+###############################################Resolved##########################
     def treasure_value(self):
         self.k = 0
 
